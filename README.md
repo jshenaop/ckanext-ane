@@ -1,9 +1,3 @@
-[![Tests](https://github.com/{{ cookiecutter.github_user_name }}/{{ cookiecutter.project }}/workflows/Tests/badge.svg?branch=main)](https://github.com/{{ cookiecutter.github_user_name }}/{{ cookiecutter.project }}/actions)
-
-# {{ cookiecutter.project }}
-
-**TODO:** Put a description of your extension here:  What does it do? What features does it have? Consider including some screenshots or embedding a video!
-
 
 ## Requirements
 
@@ -35,7 +29,7 @@ Suggested values:
    For example installing any non-Python dependencies or adding any required
    config settings.
 
-To install {{ cookiecutter.project }}:
+To install ckanext-ane:
 
 1. Activate your CKAN virtual environment, for example:
 
@@ -43,8 +37,8 @@ To install {{ cookiecutter.project }}:
 
 2. Clone the source and install it on the virtualenv
 
-    git clone https://github.com/{{ cookiecutter.github_user_name }}/{{ cookiecutter.project }}.git
-    cd {{ cookiecutter.project }}
+    git clone https://github.com/jshenaop/ckanext-ane.git
+    cd ckanext-ane
     pip install -e .
 	pip install -r requirements.txt
 
@@ -65,16 +59,16 @@ None at present
 
 	# The minimum number of hours to wait before re-checking a resource
 	# (optional, default: 24).
-	ckanext.{{ cookiecutter.project_shortname }}.some_setting = some_default_value
+	ckanext.ane.some_setting = some_default_value
 
 
 ## Developer installation
 
-To install {{ cookiecutter.project }} for development, activate your CKAN virtualenv and
+To install ckanext-ane for development, activate your CKAN virtualenv and
 do:
 
-    git clone https://github.com/{{ cookiecutter.github_user_name }}/{{ cookiecutter.project }}.git
-    cd {{ cookiecutter.project }}
+    git clone https://github.com/jshenaop/ckanext-ane.git
+    cd ckanext-ane
     python setup.py develop
     pip install -r dev-requirements.txt
 
@@ -86,9 +80,9 @@ To run the tests, do:
     pytest --ckan-ini=test.ini
 
 
-## Releasing a new version of {{ cookiecutter.project }}
+## Releasing a new version of ckanext-ane
 
-If {{ cookiecutter.project }} should be available on PyPI you can follow these steps to publish a new version:
+If ckanext-ane should be available on PyPI you can follow these steps to publish a new version:
 
 1. Update the version number in the `setup.py` file. See [PEP 440](http://legacy.python.org/dev/peps/pep-0440/#public-version-identifiers) for how to choose version numbers.
 
