@@ -3,11 +3,14 @@ import ckan.plugins.toolkit as toolkit
 
 
 class ThemePlugin(plugins.SingletonPlugin):
+    '''Theme plugin.'''
+
     plugins.implements(plugins.IConfigurer)
 
-    # IConfigurer
+    def update_config(self, config):
 
-    def update_config(self, config_):
-        toolkit.add_template_directory(config_, 'templates')
-        toolkit.add_public_directory(config_, 'public')
-        toolkit.add_resource('assets', 'ane')
+        # Add this plugin's templates dir to CKAN's extra_template_paths, so
+        # that CKAN will use this plugin's custom templates.
+        # 'templates' is the path to the templates dir, relative to this
+        # plugin.py file.
+        toolkit.add_template_directory(config, 'templates')
