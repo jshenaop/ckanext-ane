@@ -30,8 +30,10 @@
                 <ul class="list-unstyled">
                     {% block footer_links_ckan %}
                     {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
-                    <li><a href="{{ api_url }}">{{ _('CKAN API') }}</a></li>
-                    <li><a href="http://www.ckan.org/">{{ _('CKAN Association') }}</a></li>
+                    <li><a><h4>Agencia Nacional del Espectro</h4></a></li>
+                    <li><a>Localización física: Calle 93 # 17-45 Piso 4. Bogotá D.C</a></li>
+                    <li><a>Horario de atención al público: Lunes a Viernes de 8 a.m. a 5 p.m.</a></li>
+                    <li><a href="https://www.ane.gov.co/SitePages/politica-privacidad.aspx">Política de seguridad, condiciones de uso y privacidad.</a></li>
                     <li><a href="http://www.opendefinition.org/okd/"><img
                             src="{{ h.url_for_static('/base/images/od_80x15_blue.png') }}" alt="Open Data"></a></li>
                     {% endblock %}
