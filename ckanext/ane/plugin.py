@@ -14,3 +14,7 @@ class ThemePlugin(plugins.SingletonPlugin):
         # 'templates' is the path to the templates dir, relative to this
         # plugin.py file.
         toolkit.add_template_directory(config, 'templates')
+
+        # Add this plugin's public dir to CKAN's extra_public_paths, so
+        # that CKAN will use this plugin's custom static files.
+        toolkit.add_template_directory(config, 'public')
